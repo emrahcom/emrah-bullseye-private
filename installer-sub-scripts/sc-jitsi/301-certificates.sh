@@ -20,7 +20,8 @@ echo "---------------------- CERTIFICATES -----------------------"
 # ------------------------------------------------------------------------------
 # EXTERNAL IP
 # ------------------------------------------------------------------------------
-EXTERNAL_IP=$(dig -4 +short myip.opendns.com a @resolver1.opendns.com) || true
+#EXTERNAL_IP=$(dig -4 +short myip.opendns.com a @resolver1.opendns.com) || true
+EXTERNAL_IP="185.118.193.52"
 echo EXTERNAL_IP="$EXTERNAL_IP" >> $INSTALLER/000-source
 
 # ------------------------------------------------------------------------------
